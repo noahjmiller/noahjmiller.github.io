@@ -1,0 +1,69 @@
+/* Website Colors:
+	Green - #7D7E25 - rgba(125, 126, 37, 1)
+	White - #FFFFFF - rgba(255, 255, 255, 1)
+	Black - #000000 - rgba(0, 0, 0, 1)
+*/
+
+body {
+	background:      #FFFFFF;
+	font-family:     georgia, serif;
+	font-size:       100%;
+	margin:          0;
+	padding:         0;
+	text-align:      center;
+	color:           #000000;
+} a {
+	text-decoration: none;
+	color:           inherit;
+}
+
+/* Header */
+header {
+	margin:          1.25em 0em;
+} header nav {
+	text-align:      right;
+	padding:         0em .75em;
+	font-size:       1.25em;
+	min-width:       10em;
+} header nav a {
+	color:           #000000;
+	display:         inline-block;
+	margin:          0em .75em;
+} header nav a:hover {
+	color:           #7D7E25;
+} header img {
+	width:           50%;
+	max-width:       30em;
+	min-width:       15em;
+	margin:          2em 0em;
+}
+
+/* Main */
+#photos {
+	margin:          0;
+	padding:         0;
+} #photos div {
+	display:         inline-block;
+	position:        relative;
+	width:           15em;
+	height:          15em;
+	margin:          .75em;
+} #photos div img {
+	width:           100%;
+} #photos div p {
+	visibility:      hidden;
+	display:         block;
+	position:        absolute;
+	bottom:          0;
+	left:            0;
+	width:           100%;
+	padding:         .25em;
+	text-align:      right;
+	font-size:       1.5em;
+	color:           #FFFFFF;
+} #photos div:hover img {
+	opacity:         .75;
+} #photos div:hover p {
+	visibility:      visible;
+	background:      rgba(0,0,0,.7);
+}
